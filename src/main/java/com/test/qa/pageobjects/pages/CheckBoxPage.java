@@ -12,11 +12,30 @@ import com.test.qa.pageobjects.utils.PageBase;
  */
 public class CheckBoxPage extends PageBase {
 
-    private static By hdrABTest = By.xpath("//h3");
-    public static boolean isABTestPageDisplayed() {
-        return getDriver().findElement(hdrABTest).isDisplayed();
+    private static By checkBox1 = By.xpath("//*[@id=\"checkboxes\"]/input[1]");
+    private static By checkBox2 = By.xpath("//*[@id=\"checkboxes\"]/input[2]");
+
+    public static boolean isCheckBox1Displayed() {
+        return getDriver().findElement(checkBox1).isDisplayed();
     }
+
+    public static void selectCheckBox1() {
+        getDriver().findElement(checkBox1).click();
+    }
+
+    public static boolean isCheckBox1Selected() {
+        return getDriver().findElement(checkBox1).isSelected();
+    }
+
+    public static boolean isCheckBox2Displayed() {
+        return getDriver().findElement(checkBox2).isDisplayed();
+    }
+
+    public static boolean isCheckBox2Selected() {
+        return getDriver().findElement(checkBox2).isSelected();
+    }
+
     public static void waitTillHeaderLoad() {
-        waiTillVisible(hdrABTest, 2);
+        waiTillVisible(checkBox1, 2);
     }
 }

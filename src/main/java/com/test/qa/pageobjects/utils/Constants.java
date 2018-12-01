@@ -40,8 +40,8 @@ public class Constants {
 	public static final String ADMIN_PASSWORD = "admin";
 	public static final String BASIC_AUTH_URL = "http://USER_NAME:PASSWORD@the-internet.herokuapp.com/basic_auth";
 	public static final String BASIC_AUTH_SUCCESS_MESSAGE = "Congratulations! You must have the proper credentials.";
-	public static final String USER_NAME = "USER_NAME";
-	public static final String PASSWORD = "PASSWORD";
+	public static final String USER_NAME = "tomsmith";
+	public static final String PASSWORD = "SuperSecretPassword!";
 
 	public static final String ALERT_MSG_ALERT = "I am a JS Alert";
 	public static final String ALERT_MSG_CONFIRM = "I am a JS Confirm";
